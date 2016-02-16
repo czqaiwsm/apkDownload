@@ -1,0 +1,70 @@
+<resources>
+
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="dialog_title">22dp</dimen>
+    <dimen name="dialog_content">18dp</dimen>
+    <dimen name="header_bar_height">48dp</dimen>
+    
+    <!-- 
+    <dimen name="app_text_size_best">32dp</dimen>
+    <dimen name="app_text_size_most">18dp</dimen>
+    <dimen name="app_text_size_first">16dp</dimen>
+    <dimen name="app_text_size_second">14dp</dimen>
+    <dimen name="app_text_size_min">12dp</dimen>
+    
+    
+    <dimen name="tab_bar_height">36dp</dimen>
+    <dimen name="tab_bar_custom_view_magin_height">6dp</dimen>
+    <dimen name="tab_bar_indicate_magin_height">6dp</dimen>
+    <dimen name="px_32">17.78dp</dimen>
+    <dimen name="px_30">16.67dp</dimen>
+    <dimen name="px_20">11.11dp</dimen>
+    <dimen name="px_25">13.89dp</dimen>
+    <dimen name="px_10">5.56dp</dimen>
+    <dimen name="px_5">2.78dp</dimen>
+    <dimen name="px_15">8.33dp</dimen>
+    <dimen name="px_150">83.33dp</dimen>
+    <dimen name="px_28">15.56dp</dimen>
+    <dimen name="px_106">58dp</dimen>
+    <dimen name="px_40">22.22dp</dimen>
+    <dimen name="px_50">27.78dp</dimen>
+    <dimen name="px_70">38.89dp</dimen>
+    <dimen name="px_75">41.67dp</dimen>
+    <dimen name="px_60">33.33dp</dimen>
+    <dimen name="px_110">61.11dp</dimen>
+    <dimen name="px_128">71.11dp</dimen>
+    <dimen name="px_130">72.22dp</dimen>
+    <dimen name="px_80">44.44dp</dimen>
+    <dimen name="search_view_margin_top">15dp</dimen>
+    <dimen name="custom_frame_width">1dp</dimen>
+    <dimen name="custom_frame_width2">0.5dp</dimen>
+    <dimen name="seek_bar_dialog_height">90dp</dimen>
+    <dimen name="seek_bar_dialog_width">90dp</dimen>
+    <dimen name="seek_bar_width">30dp</dimen>
+    <dimen name="line">0.5dp</dimen>
+    <dimen name="_52dip">52dip</dimen>
+    <dimen name="_50dip">50dip</dimen>
+    <dimen name="_35dip">35dip</dimen>
+    <dimen name="_22sp">22sp</dimen>
+    <dimen name="_20sp">20sp</dimen>
+    <dimen name="_10dip">10dip</dimen>
+    <dimen name="_5dip">5dip</dimen>
+    <dimen name="_8dip">8dip</dimen>
+    <dimen name="_2dip">2dip</dimen>
+    <dimen name="_4dip">4dip</dimen>
+    <dimen name="_12dip">12dip</dimen>
+    <dimen name="_16dip">16dip</dimen>
+    <dimen name="_20dip">20dip</dimen>
+    <dimen name="_80dip">80dip</dimen>
+    <dimen name="_120dip">120dip</dimen>
+    <dimen name="_100dip">100dip</dimen>
+    <dimen name="_138dip">138dip</dimen>
+    <dimen name="dialog_margin">20.0dip</dimen>
+    <dimen name="dialog_padding">16.0dip</dimen>
+    <dimen name="dialog_padding_left">14.0dip</dimen>
+    <dimen name="dialog_padding_right">14.0dip</dimen>
+    <dimen name="_16sp">16sp</dimen>
+    <dimen name="_15sp">15sp</dimen>
+     -->
+
+</resources>

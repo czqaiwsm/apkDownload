@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- dialog -->
+    <color name="list_item_click_color">#e9e9e9</color>
+    <color name="color_gray2">#bebebe</color>
+    <color name="TextColorBlack">#565656</color>
+    
+    <!-- 微信支付 -->
+    <color name="navpage">#FFE1E8EB</color>
+    
+    <color name="transparent">#00000000</color>
+
+</resources>

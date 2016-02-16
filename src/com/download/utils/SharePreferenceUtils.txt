@@ -1,0 +1,154 @@
+package com.hylappbase.utils;
+
+import android.content.Context;
+import android.content.SharedPreferences;
+import android.content.SharedPreferences.Editor;
+
+import com.hylappbase.bean.Area;
+import com.hylappbase.bean.User;
+
+public class SharePreferenceUtils {
+	private static final String SP_FILE_NAME = "hylwash";
+	private static final String JOINYEAR = "join_year";
+	private static final String SCHOOL = "school_name";
+	private static final String DIYONG = "credit_diyong";
+	private static final String RATIO = "credit_ratio";
+	private static final String NAME = "userName";
+	private static final String MOBILE = "phone";
+	private static final String PASS = "pass";
+	private static final String ID_NUM = "id_card";
+	private static final String ADRESS = "address";
+	private static final String POINTS = "points";
+	private static final String ID = "id";
+	private static final String REALNAME = "real_name";
+	private static final String IS_FISRT = "is_first";
+	private static SharePreferenceUtils sharePreferenceUtils = null;
+	private SharedPreferences mSharePreference = null;
+	private Context mContext = null;
+
+	private static final String AREA_ID = "area_id";
+	private static final String AREA_NAME = "area_name";
+	private static final String AREA_PARENTID = "area_parentid";
+
+	public static SharePreferenceUtils getInstance(Context context) {
+		if (sharePreferenceUtils == null) {
+			sharePreferenceUtils = new SharePreferenceUtils(
+					context.getApplicationContext());
+		}
+		return sharePreferenceUtils;
+	}
+
+	private SharePreferenceUtils(Context context) {
+		mContext = context;
+		mSharePreference = mContext.getSharedPreferences(SP_FILE_NAME,
+				Context.MODE_WORLD_WRITEABLE);
+	}
+
+	public synchronized void saveUser(User user) {
+		if (mSharePreference != null && user != null) {
+			Editor editor = mSharePreference.edit();
+			editor.putString(MOBILE, user.getPhone());
+			editor.putString(PASS, user.getPass());
+			editor.putString(POINTS, user.getPoint());
+			editor.putInt(ID, user.getuId());
+			editor.commit();
+		}
+	}
+
+	public synchronized void clearUser() {
+		if (mSharePreference != null) {
+			Editor editor = mSharePreference.edit();
+			editor.remove(ID);
+			editor.remove(MOBILE);
+			editor.remove(SCHOOL);
+			editor.remove(PASS);
+			editor.remove(JOINYEAR);
+			editor.remove(REALNAME);
+			editor.remove(NAME);
+			editor.remove(DIYONG);
+			editor.remove(RATIO);
+			editor.remove(ID_NUM);
+			editor.remove(ADRESS);
+			editor.remove(POINTS);
+			editor.commit();
+		}
+	}
+
+	public synchronized User getUser() {
+		if (mSharePreference != null) {
+			int id = mSharePreference.getInt(ID, 0);
+			String phone = mSharePreference.getString(MOBILE, null);
+			String pass = mSharePreference.getString(PASS, null);
+			String point = mSharePreference.getString(POINTS, null);
+			// String school = mSharePreference.getString(SCHOOL, null);
+			// String year = mSharePreference.getString(JOINYEAR, null);
+			// String name = mSharePreference.getString(NAME, null);
+			// String real = mSharePreference.getString(REALNAME, null);
+			// String diyong = mSharePreference.getString(DIYONG, null);
+			// String ratio = mSharePreference.getString(RATIO, null);
+			// String id_num = mSharePreference.getString(ID_NUM, null);
+
+			User user = new User();
+
+			if (id != 0) {
+				user.setuId(id);
+				user.setPhone(phone);
+				user.setPass(pass);
+				return user;
+			}
+
+		}
+		return null;
+	}
+
+	public Boolean isFirst() {
+		if (mSharePreference != null) {
+			Boolean isDisplay = mSharePreference.getBoolean(IS_FISRT, true);
+			return isDisplay;
+		}
+		return null;
+	}
+
+	public void saveIsFirst(Boolean isDisplay) {
+		if (mSharePreference != null && isDisplay != null) {
+			Editor editor = mSharePreference.edit();
+			editor.putBoolean(IS_FISRT, isDisplay);
+			editor.commit();
+		}
+	}
+
+	public synchronized Area getArea() {
+		if (mSharePreference != null) {
+			int id = mSharePreference.getInt(AREA_ID, 0);
+			String name = mSharePreference.getString(AREA_NAME, null);
+			int parentId = mSharePreference.getInt(AREA_PARENTID, 0);
+			Area area = new Area();
+			area.setmId(id);
+			area.setmName(name);
+			area.setmParentId(parentId);
+			return area;
+
+		}
+		return null;
+	}
+
+	public synchronized void saveArea(Area area) {
+		if (mSharePreference != null && area != null) {
+			Editor editor = mSharePreference.edit();
+			editor.putInt(AREA_ID, area.getmId());
+			editor.putString(AREA_NAME, area.getmName());
+			editor.putInt(AREA_PARENTID, area.getmParentId());
+			editor.commit();
+		}
+	}
+
+	public synchronized void clearArea() {
+		if (mSharePreference != null) {
+			Editor editor = mSharePreference.edit();
+			editor.remove(AREA_ID);
+			editor.remove(AREA_NAME);
+			editor.remove(AREA_PARENTID);
+			editor.commit();
+		}
+	}
+}
