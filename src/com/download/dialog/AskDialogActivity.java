@@ -6,8 +6,8 @@ import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.TextView;
+import com.download.R;
 
-import com.apk.download.R;
 
 public class AskDialogActivity extends Activity {
 

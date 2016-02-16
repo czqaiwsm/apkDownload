@@ -14,7 +14,7 @@ import android.os.IBinder;
 import android.text.TextUtils;
 import android.widget.Toast;
 
-import com.apk.download.R;
+import com.download.R;
 import com.download.base.utils.SDCardUtils;
 import com.download.dialog.AskDialog;
 import com.download.dialog.CustormProgressDialog;

@@ -9,7 +9,7 @@ import java.util.WeakHashMap;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-import com.apk.download.R;
+import com.download.R;
 import com.download.base.utils.Utility;
 import com.download.base.utils.AppLog;
 import com.download.utils.IntentBundleKey;

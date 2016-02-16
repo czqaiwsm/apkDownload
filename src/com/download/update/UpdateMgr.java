@@ -9,7 +9,7 @@ import android.net.Uri;
 import android.os.Environment;
 import android.os.Process;
 import android.widget.Toast;
-import com.apk.download.R;
+import com.download.R;
 import com.download.dialog.AskDialog;
 import com.download.dialog.AskDialogActivity;
 import com.download.base.utils.ApkDownloadConfig;
